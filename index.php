@@ -16,7 +16,7 @@ try {
     echo 'mysqldump-php error: ' . $e->getMessage();
 }
 
-$link = mysqli_connect($PRD_HOST, $PRD_USERNAME, $PRD_PASSWORD, $PRD_DBNAME);
+$link = mysqli_connect($DEV_HOST, $DEV_USERNAME, $DEV_PASSWORD, $DEV_DBNAME);
 
 
 if (!$link) {
@@ -28,9 +28,9 @@ if (!$link) {
 
 function clearDB() {
 	global $link;
-	global $DB_NAME;
-	mysqli_query($link, "DROP DATABASE " . $DB_NAME .";");
-	mysqli_query($link, "CREATE DATABASE " . $DB_NAME .";");
+	global $DEV_DBNAME;
+	mysqli_query($link, "DROP DATABASE " . $DEV_DBNAME .";");
+	mysqli_query($link, "CREATE DATABASE " . $DEV_DBNAME .";");
 }
 
 function popuateDb() {
