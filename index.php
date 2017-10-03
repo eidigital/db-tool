@@ -3,7 +3,7 @@ require_once __DIR__  . '/config.php';
 require __DIR__ . '/vendor/autoload.php';
 
 // Create a folder for a dumped version
-if (!file_exists('path/to/directory')) {
+if (!file_exists('dump')) {
 	mkdir('dump', 0755, true);
 }
 
