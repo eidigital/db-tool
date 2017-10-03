@@ -26,4 +26,6 @@ Open `config.php` and add all the database information for both Dev and Producti
 
 Just simply run `index.php`
 
+## Credits
+
 Credit to [Zevan Rosser](https://github.com/ZevanRosser) for the original code
