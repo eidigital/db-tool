@@ -6,13 +6,13 @@ This is a PHP tool which allows you to back up your Production/Staging database 
 
 Make sure all dependencies have been installed before moving on:
 
-* [PHP](http://php.net/manual/en/install.php) >= 5.6.4
+* [PHP](http://php.net/manual/en/install.php) >= 5.3.0
 * [Composer](https://getcomposer.org/download/)
 
 
 ### Install dependencies
 
-Navigate to the cloned directory and run the followings from the command line:
+Navigate to the cloned directory and run the following from the command line:
 
 ```shell
 $ composer install
@@ -25,3 +25,7 @@ Open `config.php` and add all the database information for both Dev and Producti
 ## Using the script
 
 Just simply run `index.php`
+
+## Credits
+
+Credit to [Zevan Rosser](https://github.com/ZevanRosser) for the original code
